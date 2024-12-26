@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <title>《新斗羅大陸》半週年讚聲簽到活動</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/pc.css" type="text/css" media="screen and (min-width: 641px)" />
+    <link rel="stylesheet" href="css/mob.css" type="text/css" media="screen and (max-width: 640px)" />
+	<link href="css/aos.css" rel="stylesheet">
+	<link rel="stylesheet"  href="css/animation.css" type="text/css">
+	
+    <!-- js啟動器 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <!--pop跳窗-->
+	<link href="showdiv/showdiv.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="showdiv/showdiv.js"></script>
+
+    <!--核取方塊-->
+    <script>
+        function checkResult() {
+            var list = [];
+            var chked = document.querySelectorAll("[type=checkbox]:checked");
+            for (var i = 0; i < chked.length; i++) {
+                list.push(chked[i].value);
+            }
+            document.querySelector(".result").innerHTML = list.join(', ') || "none";
+        }
+    </script>
+	
+	<!-- 區塊動態js-->
+	<script src="js/aos.js"></script>
+
+
+    <!--input輸入框-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //搜索框      
+            $('.personal_capital').focus(function() {
+                if ($(this).val() == '角色選擇') {
+                    $(this).val("");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- PC_固定導引列按鈕 -->
+        <div class="float_box" id="side_open_pc">
+            <a href="javascript:void(0)" class="back_btn" id="side_btn_pc"></a>
+            <div class="btn_frame">
+                <ul>
+                    <li><a href="https://apps.apple.com/tw/app/id1508119997" target="_blank" class="ios_btn"></a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=hk.com.wegames.newdldl.and" target="_blank" class="google_btn"></a></li>
+					<li><a href="https://client.wegames.com.tw/newdldl/apk/hk.com.wegames.newdldl.and.1.1.2.1.apk
+" target="_blank" class="apk_btn"></a></li>
+					<li><a href="https://www.facebook.com/newdldl.tw/
+" target="_blank" class="fb_btn"></a></li>
+					<li><a href="https://newdldl.wegames.com.tw/
+" target="_blank" class="goback_btn"></a></li>
+                </ul>
+            </div>
+        </div>
+		<!-- mob_固定導引列按鈕 -->
+        <div class="float_box" id="side_open_mob">
+            <a href="javascript:void(0)" class="back_btn" id="side_btn_mob"></a>
+            <div class="btn_frame">
+                <ul>
+                    <li><a href="https://app.adjust.com/k7as9z9" target="_blank" class="ios_btn"></a></li>
+					<li><a href="https://www.facebook.com/newdldl.tw/
+" target="_blank" class="fb_btn"></a></li>
+					<li><a href="https://newdldl.wegames.com.tw/
+" target="_blank" class="goback_btn"></a></li>
+                </ul>
+            </div>
+        </div>
+		<!-------------主視覺----------------------->
+		<div class="change"></div>
+		<div class="header">
+			<a href="#" class="music_on"></a>
+			<div class="logo_x"></div>
+			<div class="logo"></div>
+			<div class="cover"></div>
+			<div class="splight"></div>
+			<!--角色-->
+			<div class="human_box" id="scene">
+        	<div class="human">
+            	<div class="p01 layer"  data-depth="-0.3"></div>
+        		<div class="p02 layer"  data-depth="0.2"></div>
+				<div class="p03 layer"  data-depth="-0.1"></div>
+			</div>				
+			</div>
+		</div>
+		
+		<!-------------ev-------------------->
+		<div class="ev_box">
+			<!----------ev01登入---------->
+			<div class="evall_box" style="display:none">
+				<a class="signin_btn" href="#"></a>
+				<div class="ev01_txt" data-aos="fade-down"></div>
+			</div>
+			<!----------ev02選擇帳號------->
+			<div class="evall_box" style="display:none">
+				<!-- 伺服器選擇 -->
+				<div class="server_chose_box">
+            		<div class="server_box">
+            			<div class="server_number">
+                			<select class="select_area">
+                    			<option>選擇伺服器</option>
+                       			<option>137區-妖眼魔樹萬妖王</option>
+                       	 		<option>S8-士官長比比東</option>
+                   			</select>
+                		</div>
+            		</div>
+				</div>
+				<!-- 角色選擇 -->
+				<div class="name_chose_box">
+            		<div class="name_box">
+            			<div class="name_number">
+                			<select class="select_area">
+                    			<option>選擇角色</option>
+                       			<option>名字最多有八個字</option>
+                       	 		<option>天橋底下的說書人</option>
+                   			</select>
+                		</div>
+            		</div>
+				</div>
+				<a class="logout_btn" href="#" data-aos="fade-down"></a>
+				<a class="confirm_btn" href="#" data-aos="fade-down"></a>
+			</div>
+			<!----------ev03七天簽到------->
+			<div class="evall_box" style="display:1">
+				<!------領取禮包------->
+				<div class="fin_gift" style="display:none">
+					<a class="get_btn" href="#"></a>
+				</div>
+				<div class="ev03_box">
+					<ul class="ev03_info">
+            			<li>
+							<div class="ev03_txt">137區-妖眼魔樹萬妖王</div>
+						</li>
+						<li>
+							<div class="ev03_txt">天橋底下的說書人</div>
+						</li>
+					</ul>
+					<a class="logout03_btn" href="#"></a>
+					<!-------獎勵pop------->
+					<a class="evgift_n_btn" href="javascript:void(0)" onclick="show_element('system01_complete')" style="display:none"></a>
+					<!-------回歸獎勵pop------->
+					<a class="evgift_b_btn" href="javascript:void(0)" onclick="show_element('system02_complete')" style="display:1"></a>
+					
+					<!-------daybox------->
+					<div class="day_box">
+						<div class="day1"><a class="ev_signin03" href="#"></a></div>
+						<div class="day2"><a class="ev_signin02" href="#"></a></div>
+						<div class="day3"><a class="ev_signin01" href="#"></a></div>
+						<div class="day4"><a class="ev_signin01" href="#"></a></div>
+						<div class="day5"><a class="ev_signin01" href="#"></a></div>
+						<div class="day6"><a class="ev_signin01" href="#"></a></div>
+						<div class="day7"><a class="ev_signin01" href="#"></a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+		<!-------------注意事項-------------------->
+		<div class="notice_box">
+			<div class="notice_title" data-aos="fade-down"></div>
+			<ul class="notice_info" data-aos="fade-down">
+            	<li>
+                	<div class="notice_txt">1、活動時間為即日起至2021/02/21 23:59，魂師需依序完成簽到方可解鎖次日簽到。</div>
+               	</li>
+				<li>
+                	<div class="notice_txt">2、每日簽到的時間為00:00點至23:59。</div>
+               	</li>
+				<li>
+                	<div class="notice_txt">3、半週年禮包不用連續每日登入簽到，只需要於活動時間內完成七次簽到條件即可獲得告五人紀念禮包。</div>
+               	</li>
+				<li>
+                	<div class="notice_txt">4、完成指定條件的各項獎勵皆會直接下發至遊戲內魂師的信箱，請魂師於遊戲內查看，獎勵信件請七日內完成領取，如未領取導致獎勵信件消失將不予補發。</div>
+               	</li>
+				<li>
+                	<div class="notice_txt">5、14天以上(包含)未登錄遊戲的魂師，每日簽到可再額外獲得一份回歸簽到獎勵。</div>
+               	</li>
+				<li>
+                	<div class="notice_txt">6、官方保留活動隨時修改條款的權利，如有爭議，皆以唯數娛樂科技股份有限公司之解釋的最終決策權為準。</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer"></div>	
+	</div>
+	
+	<!-- 區塊動態 -->
+	<script>
+    AOS.init();
+	</script>
+
+	<!-- PC_側邊攔切換菜單JS -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var isHiden = true; /*控制切换菜单*/
+            $('#side_btn_pc').click(function() {
+                if (isHiden) {
+                    $('#side_open_pc').animate({
+                        right: '-=8.8%'
+                    }); //菜单块向右移动
+                    $('#side_btn_pc').addClass("op"); //菜单
+                } else {
+                    $('#side_open_pc').animate({
+                        right: '+=8.8%'
+                    }); //菜单块向左移动
+                    $('#side_btn_pc').removeClass("op");
+                }
+                isHiden = !isHiden;
+            });
+            // isHiden只是返回部件的隐藏属性，并不能表示部件当前的真实状态。比如A部件有个子部件B，而A处于隐藏状态，子部件B必然也不可见，但子部件B本身的isHiden还是为false。
+            // 信号量
+            var index = 0;
+            // 更改按钮文字の点击事件
+            $('#side_btn_pc').click(function() {
+                //防流氓点击
+                if ($('#side_btn_pc ul li').is(":animated")) {
+                    return;
+                }
+                // 老文字淡出
+                $('#side_btn_pc ul li').eq(index).fadeOut(0, function() {
+                    // 信号量
+                    index--;
+                    if (index < 0) {
+                        index = 1;
+                    }
+                    // 新文字淡入
+                    $('#side_btn_pc ul li').eq(index).fadeIn(0);
+                });
+            });
+        });
+    </script>
+
+    <!-- MOB_側邊攔切換菜單JS -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var isHiden = true; /*控制切换菜单*/
+            $('#side_btn_mob').click(function() {
+                if (isHiden) {
+                    $('#side_open_mob').animate({
+                        right: '+=-25.5%'
+                    }); //菜单块向右移动
+                    $('#side_btn_mob').addClass("op"); //菜单
+                } else {
+                    $('#side_open_mob').animate({
+                        right: '-=-25.5%'
+                    }); //菜单块向左移动
+                    $('#side_btn_mob').removeClass("op");
+                }
+                isHiden = !isHiden;
+            });
+            // isHiden只是返回部件的隐藏属性，并不能表示部件当前的真实状态。比如A部件有个子部件B，而A处于隐藏状态，子部件B必然也不可见，但子部件B本身的isHiden还是为false。
+            // 信号量
+            var index = 0;
+            // 更改按钮文字の点击事件
+            $('#side_btn_mob').click(function() {
+                //防流氓点击
+                if ($('#side_btn_mob ul li').is(":animated")) {
+                    return;
+                }
+                // 老文字淡出
+                $('#side_btn_mob ul li').eq(index).fadeOut(0, function() {
+                    // 信号量
+                    index--;
+                    if (index < 0) {
+                        index = 1;
+                    }
+                    // 新文字淡入
+                    $('#side_btn_mob ul li').eq(index).fadeIn(0);
+                });
+            });
+        });
+    </script>
+
+    <!-- 跟隨滑鼠 -->
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+	
+	
+	<!----------------------POP UP--------------------------->
+	<!--活動獎勵明細-->
+    <div id="system01_complete" class="wrapper1" style="display:none">
+        <div class="pop_bg1">
+            <a href="" class="close_btn" mode="dialog_a" bind="system01_complete"></a>
+        </div>
+    </div>
+	<!--活動獎勵明細-->
+    <div id="system02_complete" class="wrapper1" style="display:none">
+        <div class="pop_bg2">
+            <a href="" class="close_btn02" mode="dialog_a" bind="system02_complete"></a>
+        </div>
+    </div>
+</body>
+</html>

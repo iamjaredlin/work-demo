@@ -1,0 +1,711 @@
+input,
+textarea,
+select,
+form {
+    outline: none;
+}
+
+body {
+    background-color: #000000;
+}
+
+.wrapper {
+    width: 100%;
+	height: 0;
+	padding-bottom: 370%;
+	position: relative;
+	background-image:url(../images/bg_mob.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+/* --更換背景底圖-- */
+.change {
+	position:absolute;
+	width: 100%;
+	height: 0;
+	padding-bottom: 370%;
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position:center top;
+	background-image: url(../images/bg_change_mob.jpg);
+	-webkit-animation: 2s change infinite linear;
+	-moz-animation:  2s change infinite linear;
+    -o-animation:  2s change infinite linear;
+    -ms-animation: 2s change infinite linear;
+	animation: 2s change infinite linear;
+	}
+	@-webkit-keyframes change {
+		0% {opacity: 1;}
+        5% {opacity: 0.5;}
+        10% {opacity: 0.5;}
+        15% {opacity: 0.6;}
+		25% {opacity: 0;}
+        30% {opacity: 1;}
+        40% {opacity: 0.2;}
+		50% {opacity: 0.3;}
+        60% {opacity: 0.4;}
+		70% {opacity: 0.5;}
+        80% {opacity: 1;}
+        90% {opacity: 0.5;}
+		100% {opacity: 1;}
+	}
+
+/* --固定導引列按鈕-- */
+#side_open_pc {
+    display: none;
+}
+#side_open_pad {
+    display: none;
+}
+.float_box {
+    position: fixed;
+    width: 38%;
+    height: 0;
+    padding-bottom: 50%;
+    right: 0;
+    top: 10%;
+    overflow: hidden;
+    z-index: 9998;
+}
+
+.back_btn {
+    width: 14%;
+    height: 0;
+    padding-bottom: 81%;
+    background: url(../images/back_btn_pc.png) no-repeat;
+    background-size: 100% !important;
+    display: block;
+    float: left;
+	margin-top: 26%;
+    margin-left: 19%;
+    cursor: pointer
+}
+
+
+/* -- 切換圖 -- */
+
+.op {
+    background: url(../images/more_btn_pc.png) no-repeat;
+    background-size: 100% !important;
+}
+
+.btn_frame {
+    width: 67%;
+    height: 0;
+    padding-bottom: 131%;
+    background: url(../images/btn_frame_mob.png) no-repeat;
+    background-size: 100%;
+    float: right;
+}
+
+.btn_frame ul {
+    position: absolute;
+    width: 55%;
+    height: 0;
+    padding-bottom: 60%;
+    top: 49%;
+    left: 39%;
+}
+
+.btn_frame li {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.ios_btn {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32%;
+    background: url(../images/ios_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+}
+.google_btn {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32%;
+    background: url(../images/google_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+}
+.apk_btn {display: none}
+
+.fb_btn {
+    width: 100%;
+    height: 0;
+    padding-bottom: 37%;
+    background: url(../images/fb_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.goback_btn {
+    width: 100%;
+    height: 0;
+    padding-bottom: 36%;
+    background: url(../images/back_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+
+.header{
+	position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 115%;	
+	}
+.cover{
+	background: url(../images/cover_mob.png);
+	background-size: 100%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 34.7%;
+	position: absolute;
+    z-index: 9997;
+	margin-top: 79%;
+}
+.splight{
+	width: 60%;
+	height: 0;
+	padding-bottom: 110%;
+	background-image: url("../images/splight.png");
+	background-size: 100%;
+	position: absolute;
+    z-index: 9990;
+	margin: 0 0 0 30%;
+	}
+
+.logo_x{
+	width: 21%;
+	height: 0;
+	padding-bottom: 18%;
+	background-image: url("../images/x.png");
+	background-size: 100%;
+	position: absolute;
+    z-index: 9997;
+	margin: 72.9% 0 0 38%;
+	-webkit-animation: shine 0.7s infinite;
+       -moz-animation: shine 0.7s infinite;
+        -ms-animation: shine 0.7s infinite;
+         -o-animation: shine 0.7s infinite;
+            animation: shine 0.7s infinite;
+}
+.logo{
+	width: 95%;
+	height: 0;
+	padding-bottom: 75%;
+	background-image: url("../images/logo_mob.png");
+	background-size: 100%;
+	position: absolute;
+    z-index: 9996;
+	margin: 17% 0 0 5%;
+}
+/*human*/
+.human_box {
+	width:100%;
+	height:0;
+	padding-bottom:115%;
+	margin:auto;
+	overflow:hidden;
+	}
+.human {
+	position:relative;
+	width:100%;
+	height:0;
+	padding-bottom:115%;
+	}
+.p01 {
+	position:absolute !important;
+	width: 140%;
+	height:0;
+	padding-bottom:110%;
+	background-image:url(../images/p01_mob.png);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	z-index:8;
+	left: -19% !important;
+	}
+.p02 {
+	position:absolute !important;
+	width: 100%;
+	height:0;
+	padding-bottom:32%;
+	background-image:url(../images/p02_mob.png);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	top: 61% !important;
+	z-index:7;
+	}
+.p03 {
+	position:absolute !important;
+	width: 100%;
+	height:0;
+	padding-bottom:48%;
+	background-image:url(../images/p03_mob.png);
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	z-index:6;
+	}
+
+
+/* ============================登入區================================= */
+.ev_box{
+	width: 99%;
+	height: 0;
+	padding-bottom: 94.7%;
+	background-image: url("../images/cont_bg_mob.png");
+	background-size: 100% auto;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/* ======================ev01登入========================= */
+.evall_box{
+	width: 95%;
+	height: 0;
+	padding-bottom: 86%;
+	position: relative;
+	margin: 6% 0 0 2%;
+}
+.signin_btn {
+    width: 90%;
+    height: 0;
+    padding-bottom: 36.1%;
+    background: url(../images/ev01_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: 8% 0 0 5%;
+	position: absolute;
+}
+.signin_btn:hover {
+    background-position: bottom;
+}
+.ev01_txt{
+	width: 80%;
+	height: 0;
+	padding-bottom: 26%;
+	background-image: url("../images/ev01_txt.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 54% 0 0 10%;
+	position: absolute;
+}
+/* ======================ev02選腳色========================= */
+/* --選伺服器-- */
+.server_chose_box{
+	width: 80%;
+	height: 0;
+	padding-bottom: 9.5%;
+	overflow: hidden;
+	position: absolute;
+	margin: 17% 0 0 10%;
+}
+.server_box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 13%;
+    background: url(../images/step01.png) no-repeat;
+    background-size: 100%;
+	margin-left: 1%;
+	float: left;
+}
+
+.server_number {
+    width: 62%;
+    height: 3vw;
+    margin: 1% 0 0 35%;
+    padding: 0.5% 0.5%;
+}
+/* --選角色-- */
+.name_chose_box{
+	width: 80%;
+	height: 0;
+	padding-bottom: 9.5%;
+	overflow: hidden;
+	position: absolute;
+	margin: 37% 0 0 10%;
+}
+.name_box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 13%;
+    background: url(../images/step02.png) no-repeat;
+    background-size: 100%;
+	margin-left: 1%;
+	float: left;
+}
+.name_number {
+    width: 62%;
+    height: 3vw;
+    margin: 1% 0 0 35%;
+    padding: 0.5% 0.5%;
+}
+.select_area {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/row.png) no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    background-size: 5%;
+    border: 0px;
+    width: 100%;
+    color: #383838;
+    font-size: 1em;
+    float: left;
+    font-family: Arial, 'LiHei Pro', '微軟正黑體', '新細明體', sans-serif;
+    margin-top: 1.7%;
+	letter-spacing: -0.1vw;
+}
+.logout_btn {
+    width: 40%;
+    height: 0;
+    padding-bottom: 14.2%;
+    background: url(../images/logout_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: 62% 0 0 10%;
+	position: absolute;
+}
+
+.confirm_btn {
+    width: 40%;
+    height: 0;
+    padding-bottom: 14.2%;
+    background: url(../images/confirm_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: 62% 0 0 51%;
+	position: absolute;
+}
+
+
+/* ======================ev03七天簽到========================= */
+.ev03_box{
+	width: 98%;
+	height: 0;
+	padding-bottom: 54.9%;
+	background-image: url("../images/ev03_bg.png");
+	background-size: 100% auto;
+	margin: 40% 0 0 1.5%;
+	position: relative;
+	z-index: 5;
+}
+.ev03_info{
+    width: 100%;
+    height: auto;
+	position: absolute;
+	top: -56%;
+
+}
+.ev03_info li{
+    width: 50%;
+    height: auto;
+    margin: 3% 0 0 0;
+	float: left;
+}
+.ev03_txt{
+    line-height: 1.9em;
+    font-size: 1em;
+    font-family: "Varela Round","微軟正黑體";
+    color: #FFFFFF;
+	text-align: center;
+}
+.logout03_btn {
+    width: 40%;
+    height: 0;
+    padding-bottom: 14.5%;
+    background: url(../images/logout_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: -17% 0 0 7%;
+	position: absolute;
+}
+
+.evgift_n_btn {
+    width: 40%;
+    height: 0;
+    padding-bottom: 14.5%;
+    background: url(../images/evgift_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: -17% 0 0 53%;
+	position: absolute;
+}
+
+.evgift_b_btn {
+    width: 40%;
+    height: 0;
+    padding-bottom: 14.5%;
+    background: url(../images/evgift_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: -17% 0 0 53%;
+	position: absolute;
+}
+
+/* --日期-- */
+.day_box{
+	width: 100%;
+	height: 0;
+	padding-bottom: 54.9%;
+	position: relative; 
+}
+.day1{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 9% 0 0 18.5%;
+	position: absolute;
+}
+.day2{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 12.5% 0 0 44.5%;
+	position: absolute;
+}
+.day3{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 7.5% 0 0 68.5%;
+	position: absolute;
+}
+.day4{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 29% 0 0 7.5%;
+	position: absolute;
+}
+.day5{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 27% 0 0 31.5%;
+	position: absolute;
+}
+.day6{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 26% 0 0 59.5%;
+	position: absolute;
+}
+.day7{
+	width: 10%;
+	height: 0;
+	padding-bottom: 10%;
+	margin: 22% 0 0 84%;
+	position: absolute;
+}
+/* --簽到-- */
+.ev_signin01{
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	background-image: url("../images/signin01_btn.png");
+	background-size: 100%;
+	display: block;
+}
+.ev_signin02{
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	background-image: url("../images/signin02_btn.png");
+	background-size: 100%;
+	display: block;
+}
+.ev_signin03{
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	background-image: url("../images/signin03_btn.png");
+	background-size: 100%;
+	display: block;
+}
+
+/* --半週年禮包-- */
+.fin_gift{
+	width: 100%;
+	height: 0;
+	padding-bottom: 49%;
+	position: absolute;
+	background-image: url("../images/ev03_fingift.png");
+	background-size: 100%;
+	margin: 2.5% 0 0 0.5%;
+	z-index: 6;
+}
+.get_btn {
+    width: 25%;
+    height: 0;
+    padding-bottom: 9.1%;
+    background: url(../images/get_btn.png) no-repeat;
+    background-size: 100%;
+    display: block;
+	margin: 37% 0 0 37%;
+	position: absolute;
+}
+
+/*---------注意事項-----------*/
+.notice_box{
+	width: 100%;
+	height: 0;
+	padding-bottom: 150%;
+	margin: 0 auto;
+	position: relative;
+}
+.notice_title{
+	width: 55%;
+	height: 0;
+	padding-bottom: 14.3%;
+	margin: 5% 0 0 23%;
+	background-image: url("../images/notice_title.png");
+	background-size: 100%;
+	position: absolute;
+}
+.notice_info{
+    width: 95%;
+    height: auto;
+	position: absolute;
+	top: 12%;
+	left: 4%;
+}
+.notice_info li{
+    width: 96%;
+    height: auto;
+    margin: 3% 0 0 2%;
+}
+.notice_txt{
+    line-height: 1.7em;
+    font-size: 1em;
+    font-family: "Varela Round","微軟正黑體";
+    color: #FFFFFF;
+}
+
+
+/*---------copyright-----------*/
+.footer{
+    width: 95%;
+    height: 0;
+    padding-bottom: 9%;
+    background-image: url("../images/copyright.png");
+    background-size: 100%;
+	position: relative;
+	margin: 0 auto ;
+}
+
+
+
+/*==============跳窗=====================*/
+.wrapper1{
+	margin:auto;
+	width:95%;
+}
+.pop_bg1{
+	width:100%;
+	height:0;
+	padding-bottom:102%;
+	background-image:url(../images/gift01.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+.pop_bg2{
+	width:100%;
+	height:0;
+	padding-bottom:131%;
+	background-image:url(../images/gift02.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+.close_btn{
+	background: url(../images/gen_ok.png);
+	background-size: 100%;
+    width:7%;
+	height:0;
+	padding-bottom:7%;
+    display: block;
+    position: absolute;
+	top:3%;
+	left:90%;
+}
+.close_btn02{
+	background: url(../images/gen_ok.png);
+	background-size: 100%;
+    width:7%;
+	height:0;
+	padding-bottom:7%;
+    display: block;
+    position: absolute;
+	top:2%;
+	left:90%;
+}
+
+
+
+/*==============system跳窗=====================*/
+.wrapper2{
+	margin:auto;
+	width:90%;
+}
+.pop_bg3{
+	width:100%;
+	height:auto;
+	}
+.system_top{
+	width:100%;
+	height:0;
+	padding-bottom:12%;
+	background-image:url(../images/system_top.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+.system_center{
+	width:100%;
+	background-image:url(../images/system_center.png);
+	background-repeat:repeat-y;
+	background-size:100%;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	}
+.system_bottom{
+	width:100%;
+	height:0;
+	padding-bottom:12%;
+	background-image:url(../images/system_bottom.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	}
+.system_btn{
+	background: url(../images/system_btn.png);
+	background-size: 100%;
+    width:25%;
+	height:0;
+	padding-bottom:9%;
+    display: block;
+    position: absolute;
+	left:37%;
+}
+.system_info{
+    width: 75%;
+    height: auto;
+	margin: 1% auto;
+}
+.system_info li{
+    width: 96%;
+    height: auto;
+}
+.system_txt{
+    line-height: 2em;
+    font-size: 1em;
+    font-family: "Varela Round","微軟正黑體";
+    color: #FFFFFF;
+	text-align: center;
+}
+
